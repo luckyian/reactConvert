@@ -9,7 +9,7 @@ function Navibar() {
     return (
         <Navbar expand="md" className="navitext" variant="dark" sticky="top">
             <div className="col-md-9">
-                <Navbar.Brand href="#"  >Ian Wren</Navbar.Brand>
+                <Navbar.Brand href="#"  >Weather Dashboard</Navbar.Brand>
                 <Navbar.Toggle  className="float-right" type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation" />
@@ -17,9 +17,9 @@ function Navibar() {
             <div className="col-md-3">
                 <Navbar.Collapse id="navbarNavAltMarkup">
                     <Nav>
-                        <Nav.Link href="#/index" >Home</Nav.Link>
-                        <Nav.Link href="#/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contact</Nav.Link>
-                        <Nav.Link href="#/portfolio" >Portfolio</Nav.Link>
+                        <Nav.Link href="#/index" >Dashboard</Nav.Link>
+                        <Nav.Link href="#/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Long Term Forecast</Nav.Link>
+                        <Nav.Link href="#/portfolio" >Past Cities</Nav.Link>
                         <Nav.Link href="#" className="nav-link" tabindex="3" aria-disabled="true"> </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
