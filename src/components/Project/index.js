@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 
 
-function Project(props) {
+function CurrentCity(props) {
 
     return (
         
@@ -22,4 +22,4 @@ function Project(props) {
     );
 }
 
-export default Project;
+export default CurrentCity;
