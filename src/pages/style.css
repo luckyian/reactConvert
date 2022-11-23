@@ -8,6 +8,7 @@
 
 .aboutBack {
     background: radial-gradient(circle, #b0c9af, #afc9c9, #afb8c9);
+    background-image: url("../../public/assets/clouds.jpg");
 }
 
 .titleboi{
