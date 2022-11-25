@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
+import axios, {isCancel, AxiosError} from 'axios';
 
 function searchWeather(city) {
     let currentCity = city;
@@ -16,7 +17,7 @@ function searchWeather(city) {
     return (
         
             
-            $.ajax({
+           axios({
               url: queryURL,
               method: "GET"
             }).then(function (response) {
