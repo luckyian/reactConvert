@@ -4,6 +4,6 @@ const APIKEY = "bb70df7726fdccc57ce65df7344701bc";
 
 export default {
   search: function(query) {
-    return axios.get(BASEURL + query + APIKEY);
+    return axios.get(BASEURL + query + "&units=imperial&appid=" + APIKEY);
   }
 };
