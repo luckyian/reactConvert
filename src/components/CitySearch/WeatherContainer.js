@@ -44,15 +44,15 @@ class WeatherContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for a Movie to Begin"}
+              heading={this.state.result.name || "Search for a Movie to Begin"}
             >
-              {this.state.result.Title ? (
+              {this.state.result.name ? (
                 <MovieDetail
-                  title={this.state.result.Title}
-                  src={this.state.result.Poster}
-                  director={this.state.result.Director}
-                  genre={this.state.result.Genre}
-                  released={this.state.result.Released}
+                  title={this.state.result.name}
+                  date = {timeConverter(this.state.result.dt)}
+                  latie={parseInt(this.state.result.lat)}
+                  longie={parseInt(this.state.result.lon)}
+                  icon={this.state.waether[0].icon}
                 />
               ) : (
                 <h3>No Results to Display</h3>
