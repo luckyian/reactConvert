@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Container from "./Container";
+// import Container from "./Container";
 import Row from "./Row";
 import Col from "./Col";
 import Card from "./Card";
 import SearchForm from "./SearchForm";
-import MovieDetail from "./MovieDetail";
-import API from "../utils/API";
+import WeatherDetail from "./WeatherDetail";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import API from "../../utils/API";
 
 class WeatherContainer extends Component {
   state = {
@@ -13,7 +15,7 @@ class WeatherContainer extends Component {
     search: ""
   };
 
-  // When this component mounts, search for the movie "The Matrix"
+  // When this component mounts, search for the Weather "The Matrix"
   componentDidMount() {
     this.searchWeather("Seattle");
   }
@@ -44,12 +46,12 @@ class WeatherContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.name || "Search for a Movie to Begin"}
+              heading={this.state.result.name || "Search for a Weather to Begin"}
             >
               {this.state.result.name ? (
-                <MovieDetail
+                <WeatherDetail
                   title={this.state.result.name}
-                  date = {timeConverter(this.state.result.dt)}
+                  // date = {timeConverter(this.state.result.dt)}
                   latie={parseInt(this.state.result.lat)}
                   longie={parseInt(this.state.result.lon)}
                   icon={this.state.waether[0].icon}
