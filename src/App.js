@@ -3,6 +3,7 @@ import { HashRouter as Router, Route} from "react-router-dom";
 import Contact from "./pages/Contact";
 import Index from "./pages/Index";
 import Portfolio from "./pages/Portfolio";
+import WeatherContainer from "./components/CitySearch/WeatherContainer";
 import Navibar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -16,11 +17,11 @@ function App() {
         <Navibar />
         <Wrapper>
 
-
-          <Route exact path="/" component={Index} />
-          <Route exact path="/index" component={Index} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/portfolio" component={Portfolio} />
+          {/* <WeatherContainer/> */}
+          {/* <Route exact path="/" component={Index} /> */}
+          {/* <Route exact path="/index" component={Index} /> */}
+          {/* <Route exact path="/contact" component={Contact} /> */}
+          {/* <Route exact path="/portfolio" component={Portfolio} /> */}
 
         </Wrapper>
         <Footer />
