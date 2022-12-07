@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 // import Container from "./Container";
-import Row from "./Row";
-import Col from "./Col";
-import Card from "./Card";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from "react-bootstrap/Card";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import SearchForm from "./SearchForm";
 import WeatherDetail from "./WeatherDetail";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import API from "../../utils/API";
 
