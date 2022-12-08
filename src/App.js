@@ -17,7 +17,7 @@ function App() {
         <Navibar />
         <Wrapper>
 
-          {/* <WeatherContainer/> */}
+          <WeatherContainer/>
           <Route exact path="/" component={Index} />
           {/* <Route exact path="/index" component={Index} /> */}
           {/* <Route exact path="/contact" component={Contact} /> */}
