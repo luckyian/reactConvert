@@ -42,9 +42,9 @@ class WeatherContainer extends Component {
 
   render() {
     return (
+      <div>
       <Container>
-        <Row>
-          <Col size="md-8">
+        
             <Card
               heading={this.state.result.name || "Search for a Weather to Begin"}
             >
@@ -60,8 +60,8 @@ class WeatherContainer extends Component {
                 <h3>No Results to Display</h3>
               )}
             </Card>
-          </Col>
-          <Col size="md-4">
+        
+          
             <Card heading="Search">
               <SearchForm
                 value={this.state.search}
@@ -69,9 +69,10 @@ class WeatherContainer extends Component {
                 handleFormSubmit={this.handleFormSubmit}
               />
             </Card>
-          </Col>
-        </Row>
+          
+       
       </Container>
+      </div>
     );
   }
 }
