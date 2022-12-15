@@ -24,7 +24,7 @@ function Index() {
                 <Card.Img src="./assets/clouds.jpg" className="p-2" alt="Ian Wren"></Card.Img>
               </div>
               <div>
-             <WeatherContainer/>
+             {/* <WeatherContainer/> */}
 
             </div>
 
